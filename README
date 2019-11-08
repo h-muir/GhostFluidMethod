@@ -1,0 +1,26 @@
+README
+
+clear state file and directory structure:
+
+BasicGhostFluidSolver/ 				-  	data/
+						- 	ExactSols/
+						-	visualisation/
+						*	BasicGhostFluidSolver.cpp
+						*	TestCases_GhostFluid.H
+
+RiemannGhostFluidSolver/ 			-  	data/
+						- 	ExactSols/
+						-	visualisation/
+						*	RiemannGhostFluidSolver.cpp
+						*	TestCases_GhostFluid.H
+
+
+data/ is populated with solution data as the simulation runs
+
+visualisation/ is the destination of graphics once files are compiled according to terminal instructions at the end of the simulation
+
+ExactSols/ contains the data of the exact solutions from the Toro tests and other papers. This data was used for the versions of the plots generated in the report.
+
+BasicGhostFluidSolver.cpp and RiemannGhostFluidSolver.cpp are the primary programs.
+The main() function at the very bottom of both programs is where the user can specify the simulation settings. The program must be compiled with the header file: TestCases_GhostFluid.H
+
